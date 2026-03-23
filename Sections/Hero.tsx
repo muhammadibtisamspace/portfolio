@@ -1,5 +1,8 @@
-export default Hero () {
-  return(
-    <section></section>
-  );
+
+const Hero = () => {
+  return (
+    <div></div>
+  )
 }
+
+export default Hero
