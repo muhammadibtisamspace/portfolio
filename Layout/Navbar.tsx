@@ -15,7 +15,7 @@ export default function Navbar() {
   const [IsMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5">
+    <header className="fixed top-0 left-0 right-0 bg-transparent py-5 z-50">
       <nav className="container mx-auto flex px-6 justify-between items-center">
         <Link
           href="/"
