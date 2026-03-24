@@ -6,15 +6,16 @@ import Projects from "@/Sections/Projects";
 import Testimonials from "@/Sections/Testimonials";
 
 export default function Home() {
-  return <div className="min-h-screen overflow-x-hidden ">
-    <Navbar />
-    <main>
-      <Hero />
-      <Projects />
-      <Experience />
-      <Testimonials />
-      <Contact />
-
-    </main>
-  </div>;
+  return (
+    <div className="min-h-screen overflow-x-hidden ">
+      <Navbar />
+      <main>
+        <Hero />
+        <Projects />
+        <Experience />
+        <Testimonials />
+        <Contact />
+      </main>
+    </div>
+  );
 }
