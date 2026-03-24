@@ -1,4 +1,5 @@
 import Navbar from "@/Layout/Navbar";
+import About from "@/Sections/About";
 import Contact from "@/Sections/Contact";
 import Experience from "@/Sections/Experience";
 import Hero from "@/Sections/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Projects />
         <Experience />
         <Testimonials />

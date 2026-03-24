@@ -85,6 +85,7 @@ export default function Navbar() {
                 <li key={href}>
                   <Link
                     href={href}
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className="text-lg text-muted-foreground  hover:text-foreground py-2"
                   >
                     {label}

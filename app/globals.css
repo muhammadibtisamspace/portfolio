@@ -108,6 +108,16 @@
     }
   }
 
+
+    @keyframes floatsnd {
+    0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px); /* smaller movement for subtle effect */
+  }
+  }
+
   @keyframes marquee {
     0% {
       transform: translateX(0);
@@ -125,8 +135,13 @@
     animation: float 4s ease-in-out infinite;
   }
 
+
+    .animate-float-snd {
+    animation: floatsnd 4s ease-in-out infinite;
+  }
+
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: marquee 15s linear infinite;
   }
 
   .animation-delay-100 {
