@@ -7,7 +7,6 @@ import Link from "next/link";
 const NavLinkList = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
   { href: "#testimonials", label: "Testimonials" },
 ];
 
@@ -15,22 +14,23 @@ export default function Navbar() {
   const [IsMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [IsScrolled, setIsScrolled] = useState(false);
 
-  useEffect(()=> {
+  useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50){
-        setIsScrolled(true)
-      }else {
-        setIsScrolled(false)
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
       }
-    }
-    window.addEventListener("scroll", handleScroll)
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll)
-
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 transition-opacity duration-300  ${IsScrolled? "glass-strong py-3 glass  " : "bg-transparent py-5 z-50"} md:bg-transparent py-5 z-50 `}>
+    <header
+      className={`fixed top-0 left-0 right-0 transition-opacity duration-300  ${IsScrolled ? "glass-strong py-3 glass  " : "bg-transparent py-5 z-50"} md:bg-transparent py-5 z-50 `}
+    >
       <nav className="container mx-auto flex px-6 justify-between items-center">
         <Link
           href="/"
@@ -62,17 +62,18 @@ export default function Navbar() {
         {/* CTA Button */}
 
         <div>
-          <Button
-            size="sm"
-            className="hidden sm:block"
-          >
-            Contact Me
-          </Button>
+          <Link href="#contact">
+            <Button size="sm" className="hidden sm:block">
+              Contact Me
+            </Button>
+          </Link>
         </div>
 
-        <button className="sm:hidden p-2 text-foreground transition-all"
-        onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
-          {IsMobileMenuOpen ? <X size={24 }/> : <Menu size={24}/>}
+        <button
+          className="sm:hidden p-2 text-foreground transition-all"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+        >
+          {IsMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
       {/* Mobile Menu Section Navbar */}

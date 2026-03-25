@@ -15,15 +15,15 @@ const projects = [
     title: "E-Commerce Platform",
     image: "/project2.png",
     tags: ["React", "TailwindCSS", "Javascript", "Jsx"],
-    link: "",
-    github: "",
+    link: "https://saa-s-landing-page-e7iu.vercel.app/",
+    github: "https://github.com/muhammadibtisamspace/SaaS-Landing-Page/tree/main",
   },
   {
     title: "Memory Game",
-    image: "/project2.png",
+    image: "/gameProject.png",
     tags: ["React", "TailwindCSS"],
-    link: "",
-    github: "",
+    link: "https://memory-game-seven-silk.vercel.app/",
+    github: "https://github.com/muhammadibtisamspace/memory-game/tree/main",
   },
 ];
 
@@ -35,13 +35,13 @@ export default function Projects() {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mx-auto max-w-3xl mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
+          <span className="text-secondary-foreground  text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-300">
             project that
             <span className="font-serif italic font-normal text-white">
-              make an impact.
+              &nbsp;make an impact.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-400">
@@ -89,8 +89,6 @@ export default function Projects() {
                 </div>
               </div>
 
-
-
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
@@ -117,14 +115,9 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-
-
-
-
             </div>
           ))}
         </div>
-
 
         {/* view All Cta */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500 ">

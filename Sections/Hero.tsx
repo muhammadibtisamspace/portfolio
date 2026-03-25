@@ -94,16 +94,18 @@ const Hero = () => {
             {/* Call to actions / CTAs  */}
 
             <div className=" flex flex-wrap gap-4 animate-fade-in animation-delay-500">
-              <Button size="lg">
-                Contact Me <ArrowRight className="h-5 w-5" />
-              </Button>
+              <Link href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="h-5 w-5" />
+                </Button>
+              </Link>
 
-              <AnimatedBorderButton>
+              {/* <AnimatedBorderButton>
                 <span className="relative justify-center items-center z-10 gap-2 flex">
                   <Download className="w-5 h-5" />
                   Download CV
                 </span>
-              </AnimatedBorderButton>
+              </AnimatedBorderButton> */}
             </div>
 
             {/* Social Links */}
@@ -111,9 +113,8 @@ const Hero = () => {
               <span>Follow me :</span>
 
               {[
-                { icon: Github, href: "https://www.github.com" },
-                { icon: Linkedin, href: "https://www.linkedin.com" },
-                { icon: X, href: "https://www.github.com" },
+                { icon: Github, href: "https://github.com/muhammadibtisamspace" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/muhammad-ibtisam-babar-432643330" },
               ].map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -173,10 +174,12 @@ const Hero = () => {
         {/* Skills Section  */}
 
         <div className="mt-20 animate-fade-in animation-delay-700">
-          <p className="text-sm text-muted-foreground mb-6 text-center">Technologies i work with</p>
+          <p className="text-sm text-muted-foreground mb-6 text-center">
+            Technologies i work with
+          </p>
           <div className="relative overflow-hidden">
             <div className="flex  animate-marquee">
-              {[...skills, ...skills].map((skill,index)=>(
+              {[...skills, ...skills].map((skill, index) => (
                 <div key={index} className="shrink-0 px-8 py-4">
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors active:text-muted-foreground">
                     {skill}
