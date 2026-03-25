@@ -39,7 +39,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, skills }) => (
       {skills.map((skill, idx) => (
         <span
           key={idx}
-          className="text-muted-foreground hover:text-foreground glass   transition-colors italic font-serif text-xl rounded-2xl px-3 py-1 "
+          className="px-4 py-1.5 rounded-full bg-surface text-md font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
         >
           {skill}
         </span>
