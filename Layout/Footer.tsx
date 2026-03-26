@@ -1,14 +1,21 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/muhammadibtisamspace", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/muhammad-ibtisam-babar-432643330", label: "LinkedIn" },
+  {
+    icon: Github,
+    href: "https://github.com/muhammadibtisamspace",
+    label: "GitHub",
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/muhammad-ibtisam-babar-432643330",
+    label: "LinkedIn",
+  },
 ];
 
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -47,6 +54,7 @@ export const Footer = () => {
             {socialLinks.map((social) => (
               <a
                 key={social.label}
+                target="_blank"
                 href={social.href}
                 aria-label={social.label}
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"

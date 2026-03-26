@@ -62,7 +62,7 @@ export default function Navbar() {
         {/* CTA Button */}
 
         <div>
-          <Link href="#contact">
+          <Link href="#contact ">
             <Button size="sm" className="hidden sm:block">
               Contact Me
             </Button>
@@ -94,8 +94,9 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-
+              <Link href="#contact">
             <Button size="sm">Contact Me</Button>
+              </Link>
           </div>
         </div>
       )}
